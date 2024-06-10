@@ -1,0 +1,17 @@
+/* Custom styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-fluid {
+    padding: 20px;
+}
