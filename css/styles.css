@@ -1,9 +1,10 @@
 /* css/styles.css */
 
-/* Set background color for the page */
+/* General body styling */
 body {
     background-color: #eaeaea; /* Light gray background */
     font-family: Arial, sans-serif;
+    padding-top: 60px; /* To prevent content from being hidden under the fixed navbar */
 }
 
 /* Navbar styling */
@@ -12,15 +13,14 @@ body {
     color: #fff; /* White text for better contrast */
     border: none;
     border-radius: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar-brand, .navbar-nav li a {
     color: #fff !important; /* White text for links */
-}
-
-/* Background color for dropdown menu items in mobile view */
-.navbar-nav {
-    background-color: #333;
 }
 
 .navbar-toggle {
@@ -31,7 +31,17 @@ body {
     background-color: #fff; /* White icon bars */
 }
 
-/* Background colors for menu items */
+/* Background color for dropdown menu items in mobile view */
+.navbar-nav {
+    background-color: #333;
+}
+
+/* Padding for container to ensure content doesn't overlap with fixed navbar */
+.container {
+    padding-top: 20px;
+}
+
+/* Styling for menu items */
 .menu-item {
     background-color: #fff; /* White background for menu items */
     border: 1px solid #ddd;
@@ -59,15 +69,22 @@ body {
     color: #333; /* Dark color for main heading */
 }
 
-/* Height of main content to ensure scrolling */
-.container {
-    min-height: 1000px;
-}
-
-/* Mobile specific adjustments */
+/* Responsive adjustments */
 @media (max-width: 767px) {
     .navbar-nav li a {
         width: 100%;
         text-align: center;
+    }
+    
+    /* Ensure menu items are in a single column on mobile */
+    .menu-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Two-column layout for tablet */
+    .col-sm-4 {
+        width: 50%;
     }
 }
