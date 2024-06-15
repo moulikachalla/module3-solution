@@ -1,43 +1,73 @@
+/* css/styles.css */
+
+/* Set background color for the page */
 body {
+    background-color: #eaeaea; /* Light gray background */
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
 }
 
-.navbar-brand {
-    font-size: 1.5em;
+/* Navbar styling */
+.navbar {
+    background-color: #333; /* Dark background for navbar */
+    color: #fff; /* White text for better contrast */
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-brand, .navbar-nav li a {
+    color: #fff !important; /* White text for links */
+}
+
+/* Background color for dropdown menu items in mobile view */
+.navbar-nav {
+    background-color: #333;
 }
 
 .navbar-toggle {
-    border: none;
+    border-color: #fff; /* White border for toggle button */
 }
 
 .navbar-toggle .icon-bar {
-    background-color: #000;
+    background-color: #fff; /* White icon bars */
 }
 
-#main-section {
-    height: 1000px; /* To ensure scrolling */
-    background-color: #e0e0e0;
-    padding: 20px;
-}
-
-.tall-section {
-    height: 1000px;
-    background-color: #ccc;
-    text-align: center;
-    padding-top: 400px;
-}
-
-.row > div {
+/* Background colors for menu items */
+.menu-item {
+    background-color: #fff; /* White background for menu items */
+    border: 1px solid #ddd;
+    padding: 15px;
     margin-bottom: 20px;
+    height: 300px; /* Adjust height if needed */
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
-h3 {
-    margin-top: 0;
+/* Menu item headings */
+.menu-item h2 {
+    color: #333; /* Dark color for headings */
 }
 
-p {
-    margin: 10px 0;
+/* Menu item text */
+.menu-item p {
+    color: #555; /* Medium color for text */
+}
+
+/* Centering the menu heading */
+.text-center {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for main heading */
+}
+
+/* Height of main content to ensure scrolling */
+.container {
+    min-height: 1000px;
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 767px) {
+    .navbar-nav li a {
+        width: 100%;
+        text-align: center;
+    }
 }
