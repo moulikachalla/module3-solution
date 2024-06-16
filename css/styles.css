@@ -27,13 +27,17 @@ h1 {
     background-color: #333;
 }
 
-.navbar-nav {
-    display: none; /* Hide navbar items for desktop and tablet */
+/* Hide navbar items for desktop and tablet */
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
 }
 
+/* Show navbar items for mobile */
 @media (max-width: 767px) {
     .navbar-nav {
-        display: block; /* Show navbar items for mobile */
+        display: block;
     }
 
     .navbar-collapse {
