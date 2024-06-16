@@ -42,7 +42,7 @@ h1 {
 
     .navbar-collapse {
         width: 100%;
-        background-color: #f8f8f8;
+        background-color: #f8f8f8; /* Adjusted background color */
     }
     
     .navbar-nav > li {
@@ -53,7 +53,7 @@ h1 {
     .navbar-nav > li > a {
         color: #333;
         text-align: center;
-        background-color: #f8f8f8;
+        background-color: #f8f8f8; /* Adjusted background color */
         padding: 10px 0;
     }
 }
@@ -68,7 +68,7 @@ h3 {
 }
 
 .section {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; /* Adjusted background color */
     margin-bottom: 20px;
     padding: 20px;
     height: 700px; /* Ensures enough content for scrolling */
