@@ -1,5 +1,6 @@
 body {
     padding-top: 20px;
+    overflow-y: scroll; /* Always show vertical scrollbar */
 }
 
 h1 {
@@ -66,13 +67,9 @@ h3 {
     background-color: #f2f2f2;
     margin-bottom: 20px;
     padding: 20px;
-    height: 1000px; /* to ensure scrolling */
+    height: 700px; /* Ensures enough content for scrolling */
 }
 
 html, body {
     height: 100%; /* Ensure the body takes full height */
-}
-
-body {
-    overflow-y: scroll; /* Always show vertical scrollbar */
 }
