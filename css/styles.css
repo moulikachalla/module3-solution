@@ -17,6 +17,7 @@ h1 {
 
 .navbar-nav > li > a {
     color: #333;
+    border-bottom: 1px solid #000; /* Black line between menu items */
 }
 
 .navbar-toggle {
@@ -42,7 +43,7 @@ h1 {
 
     .navbar-collapse {
         width: 100%;
-        background-color: #f8f8f8; /* Adjusted background color */
+        background-color: #f8f8f8; /* Background color for mobile menu */
     }
     
     .navbar-nav > li {
@@ -55,6 +56,7 @@ h1 {
         text-align: center;
         background-color: #f8f8f8; /* Adjusted background color */
         padding: 10px 0;
+        border-bottom: 1px solid #000; /* Black line between menu items */
     }
 }
 
@@ -71,8 +73,13 @@ h3 {
     background-color: #e0e0e0; /* Adjusted background color */
     margin-bottom: 20px;
     padding: 20px;
-    height: 700px; /* Ensures enough content for scrolling */
     border: 1px solid #ccc; /* Optional border for better visibility */
+    height: auto; /* Remove the fixed height */
+    min-height: 300px; /* Ensure sections have a minimum height */
+}
+
+.section h3 {
+    margin-top: 0;
 }
 
 html, body {
