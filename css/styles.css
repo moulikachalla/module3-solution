@@ -1,90 +1,58 @@
-/* css/styles.css */
-
-/* General body styling */
 body {
-    background-color: #eaeaea; /* Light gray background */
-    font-family: Arial, sans-serif;
-    padding-top: 60px; /* To prevent content from being hidden under the fixed navbar */
-}
-
-/* Navbar styling */
-.navbar {
-    background-color: #333; /* Dark background for navbar */
-    color: #fff; /* White text for better contrast */
-    border: none;
-    border-radius: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.navbar-brand, .navbar-nav li a {
-    color: #fff !important; /* White text for links */
-}
-
-.navbar-toggle {
-    border-color: #fff; /* White border for toggle button */
-}
-
-.navbar-toggle .icon-bar {
-    background-color: #fff; /* White icon bars */
-}
-
-/* Background color for dropdown menu items in mobile view */
-.navbar-nav {
-    background-color: #333;
-}
-
-/* Padding for container to ensure content doesn't overlap with fixed navbar */
-.container {
     padding-top: 20px;
 }
 
-/* Styling for menu items */
-.menu-item {
-    background-color: #fff; /* White background for menu items */
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 20px;
-    height: 300px; /* Adjust height if needed */
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+h1 {
+    margin-bottom: 40px;
 }
 
-/* Menu item headings */
-.menu-item h2 {
-    color: #333; /* Dark color for headings */
+.navbar-brand {
+    font-weight: bold;
 }
 
-/* Menu item text */
-.menu-item p {
-    color: #555; /* Medium color for text */
+.navbar-collapse {
+    background-color: #f8f8f8;
 }
 
-/* Centering the menu heading */
-.text-center {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #333; /* Dark color for main heading */
+.navbar-nav > li > a {
+    color: #333;
 }
 
-/* Responsive adjustments */
+.navbar-toggle {
+    float: right;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #333;
+}
+
 @media (max-width: 767px) {
-    .navbar-nav li a {
-        width: 100%;
-        text-align: center;
+    .navbar-nav {
+        float: none;
+        margin: 0;
     }
     
-    /* Ensure menu items are in a single column on mobile */
-    .menu-item {
-        margin-bottom: 20px;
+    .navbar-nav > li {
+        float: none;
+    }
+    
+    .navbar-nav > li > a {
+        text-align: center;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    /* Two-column layout for tablet */
-    .col-sm-4 {
-        width: 50%;
-    }
+.container {
+    padding: 15px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.row > div {
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 700px; /* for demonstration, adjust as needed */
 }
