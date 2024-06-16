@@ -26,15 +26,18 @@ h1 {
     background-color: #333;
 }
 
+.navbar-nav {
+    display: none; /* Hide navbar items for desktop and tablet */
+}
+
 @media (max-width: 767px) {
+    .navbar-nav {
+        display: block; /* Show navbar items for mobile */
+    }
+
     .navbar-collapse {
         width: 100%;
         background-color: #333;
-    }
-    
-    .navbar-nav {
-        float: none;
-        margin: 0;
     }
     
     .navbar-nav > li {
@@ -64,4 +67,12 @@ h3 {
     margin-bottom: 20px;
     padding: 20px;
     height: 1000px; /* to ensure scrolling */
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes full height */
+}
+
+body {
+    overflow-y: scroll; /* Always show vertical scrollbar */
 }
