@@ -21,7 +21,7 @@ body {
 .menu-item {
     background-color: #e7e7e7;
     padding: 20px;
-    margin: 10px;
+    margin: 10px 0;
     border-radius: 4px;
     min-height: 250px; /* Ensure a minimum height */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
@@ -48,21 +48,8 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .container .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .menu-item {
-        flex: 1 1 calc(50% - 20px); /* Two items per row */
-        margin: 10px;
-    }
-}
-
-@media (min-width: 992px) {
-    .menu-item {
-        flex: 1 1 calc(33.333% - 20px); /* Three items per row */
-        margin: 10px;
+        margin-bottom: 20px;
     }
 }
 
@@ -70,3 +57,5 @@ body {
 .text-center {
     text-align: center;
 }
+
+
