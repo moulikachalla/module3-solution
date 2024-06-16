@@ -74,12 +74,8 @@ h3 {
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ccc; /* Optional border for better visibility */
-    height: auto; /* Remove the fixed height */
     min-height: 300px; /* Ensure sections have a minimum height */
-}
-
-.section h3 {
-    margin-top: 0;
+    height: auto; /* Remove the fixed height */
 }
 
 html, body {
