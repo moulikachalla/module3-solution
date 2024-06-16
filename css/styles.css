@@ -1,108 +1,23 @@
+/* Global styles */
 body {
-    padding-top: 20px;
-    overflow-y: scroll; /* Always show vertical scrollbar */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    margin-bottom: 40px;
+/* Navbar styles */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
 }
 
-.navbar-brand {
-    font-weight: bold;
-}
-
-.navbar-collapse {
-    background-color: #f8f8f8;
-}
-
-.navbar-nav > li > a {
-    color: #333;
-    border-bottom: 1px solid #000; /* Black line between menu items */
-}
-
-.navbar-toggle {
-    float: right;
-}
-
-.navbar-toggle .icon-bar {
-    background-color: #333;
-}
-
-/* Hide navbar items for desktop and tablet */
-@media (min-width: 768px) {
-    .navbar-nav {
-        display: none;
-    }
-}
-
-/* Show navbar items for mobile */
-@media (max-width: 767px) {
-    .navbar-nav {
-        display: block;
-    }
-
-    .navbar-collapse {
-        width: 100%;
-        background-color: #f8f8f8; /* Background color for mobile menu */
-    }
-    
-    .navbar-nav > li {
-        float: none;
-        width: 100%;
-    }
-    
-    .navbar-nav > li > a {
-        color: #333;
-        text-align: center;
-        background-color: #f8f8f8; /* Adjusted background color */
-        padding: 10px 0;
-        border-bottom: 1px solid #000; /* Black line between menu items */
-    }
-}
-
+/* Container styles */
 .container {
-    padding: 15px;
-}
-
-h3 {
-    text-align: center;
-    margin-top: 0;
-}
-
-.section {
-    background-color: #e0e0e0; /* Adjusted background color */
-    margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ccc; /* Optional border for better visibility */
-    min-height: 300px; /* Ensure sections have a minimum height */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better distinction */
 }
 
-html, body {
-    height: 100%; /* Ensure the body takes full height */
-}
-
-/* Additional styles for proper alignment */
-.row {
-    margin: 0 -15px; /* Adjust row margins to counteract column padding */
-}
-
-.section {
-    padding: 20px;
-    background-color: #e0e0e0;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 767px) {
-    .row {
-        flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    }
-    .section {
-        max-width: 100%;
-    }
-}
+/* Menu item styles */
 .menu-item {
     background-color: #e7e7e7;
     padding: 20px;
@@ -114,7 +29,33 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
+.menu-item h2 {
+    margin-top: 0;
+}
 
+.menu-item p {
+    margin-bottom: 0;
+}
 
+/* Media Queries for responsiveness */
+@media (max-width: 767px) {
+    .menu-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+/* Add any additional styles as needed */
