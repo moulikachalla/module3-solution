@@ -15,8 +15,8 @@ body {
 
 .top-section h2 {
     margin: 0;
-    text-align: center;
     font-size: 1.5em;
+    text-align: left; /* Align text to the left */
 }
 
 /* Navbar styles */
@@ -87,4 +87,10 @@ body {
 /* Utility classes */
 .text-center {
     text-align: center;
+}
+.top-section h2 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: left; /* Align text to the left */
+    padding-left: 15px; /* Add padding to the left */
 }
