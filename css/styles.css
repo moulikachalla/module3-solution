@@ -30,7 +30,6 @@ body {
     float: left;
 }
 
-/* Centering the dropdown menu */
 .navbar-center {
     float: none;
     text-align: center;
@@ -70,6 +69,22 @@ body {
         margin-bottom: 20px;
         padding: 15px;
         font-size: 14px;
+    }
+
+    .navbar-center {
+        flex-direction: column;
+    }
+
+    .navbar-center > li {
+        width: 100%;
+        text-align: center;
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navbar-center > li > a {
+        display: block;
+        padding: 10px 15px;
     }
 }
 
