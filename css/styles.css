@@ -13,11 +13,15 @@ body {
     border-bottom: 1px solid #aaa;
 }
 
-.company-name {
+.top-section h2 {
     margin: 0;
     font-size: 1.5em;
     text-align: left;
-    padding-left: 15px;
+}
+
+/* Align the company name to the left */
+.company-name {
+    text-align: left;
 }
 
 /* Navbar styles */
@@ -55,8 +59,8 @@ body {
     padding: 20px;
     margin: 10px 0;
     border-radius: 4px;
-    min-height: 150px; /* Adjusted height */
-    box-sizing: border-box;
+    min-height: 250px; /* Ensure a minimum height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,20 +68,24 @@ body {
     text-align: center;
 }
 
+.menu-item h2 {
+    margin-top: 0;
+}
+
+.menu-item p {
+    margin-bottom: 0;
+}
+
 /* Media Queries for responsiveness */
 @media (max-width: 767px) {
     .menu-item {
         margin-bottom: 20px;
-        padding: 15px;
-        font-size: 14px;
     }
 }
 
-@media (min-width:768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .menu-item {
         margin-bottom: 20px;
-        padding: 15px;
-        font-size: 16px;
     }
 }
 
@@ -85,8 +93,6 @@ body {
 .text-center {
     text-align: center;
 }
-
 .text-left {
     text-align: left;
 }
-
