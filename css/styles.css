@@ -88,9 +88,10 @@ body {
 .text-center {
     text-align: center;
 }
+.text-left {
+    text-align: left;
+}
+
 .top-section h2 {
-    margin: 0;
-    font-size: 1.5em;
-    text-align: left; /* Align text to the left */
     padding-left: 15px; /* Add padding to the left */
 }
